@@ -1,0 +1,16 @@
+.inputField {
+  height: 50px;
+  width: 100%;
+}
+
+.signinBtnGroup {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+
+  .forgotPassword {
+    cursor: pointer;
+    margin-left: 20px;
+    color: rgb(66, 133, 244);
+  }
+}
