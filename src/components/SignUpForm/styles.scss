@@ -1,0 +1,9 @@
+.signUpForm {
+  display: block;
+  -webkit-animation: signInFormInAnimation .25s ease-out;
+  animation: signInFormInAnimation .25s ease-out;
+
+  .signUpBtnGroup {
+    margin-top: 15px;
+  }
+}

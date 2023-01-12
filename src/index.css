@@ -17,3 +17,26 @@ code {
   padding: 0;
   box-sizing: border-box;
 }
+
+@keyframes TextOutAnimation {
+  from {opacity: 1}
+  to {opacity: 0}
+}
+
+@keyframes TextInAnimation {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@keyframes signInFormInAnimation {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-20%);
+    transform: translateY(-20%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}

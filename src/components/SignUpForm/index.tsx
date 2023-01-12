@@ -3,35 +3,52 @@ import { Box, Button } from '@mui/material';
 import { FormContainer, TextFieldElement, PasswordElement } from 'react-hook-form-mui';
 
 import './styles.scss';
-import { VCenterCmpnt } from 'utils/enums';
-
-interface IProps {
-  setVCenterCmpnt: (_: VCenterCmpnt) => void;
-}
 
 interface IFormData {
+  fName: string;
+  lName: string;
   email: string;
   pwd: string;
 }
 
-export const SignInForm = (props: IProps) => {
-  const { setVCenterCmpnt } = props;
-
+export const SingUpForm = () => {
   const onSubmit = useCallback((data: IFormData) => {
     console.log(data);
-  }, [])
+  }, []);
 
   return (
-    <Box className="signInForm">
+    <Box className="signUpForm">
       <FormContainer onSuccess={onSubmit}>
         <div>
           <TextFieldElement
             required
             fullWidth
             className="inputField"
+            label="First name"
+            type="text"
+            name="fName"
+            variant="standard"
+            margin="normal"
+            InputLabelProps={{ shrink: true }}
+          />
+          <TextFieldElement
+            required
+            fullWidth
+            className="inputField"
+            label="Last name"
+            type="text"
+            name="lName"
+            variant="standard"
+            margin="normal"
+            InputLabelProps={{ shrink: true }}
+          />
+          <TextFieldElement
+            required
+            fullWidth
+            className="inputField"
             label="Email"
             type="email"
-            name='email'
+            name="email"
             variant="standard"
             margin="normal"
             InputLabelProps={{ shrink: true }}
@@ -42,20 +59,17 @@ export const SignInForm = (props: IProps) => {
             className="inputField"
             label="Password"
             type="password"
-            name='pwd'
+            name="pwd"
             variant="standard"
             margin="normal"
-            validation={{ required: "No password provided." }}
+            validation={{ required: 'No password provided.' }}
             InputLabelProps={{ shrink: true }}
           />
         </div>
-        <div className="signInBtnGroup">
+        <div className="signUpBtnGroup">
           <Button variant="contained" type="submit">
-            Sign In
+            Sign Up
           </Button>
-          <div className="forgotPassword" onClick={() => setVCenterCmpnt(VCenterCmpnt.PassRecov)}>
-            Forgot password?
-          </div>
         </div>
       </FormContainer>
     </Box>

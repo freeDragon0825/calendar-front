@@ -1,16 +1,17 @@
-.inputField {
-  height: 50px;
-  width: 100%;
-}
+.signInForm {
+  display: block;
+  -webkit-animation: signInFormInAnimation .25s ease-out;
+  animation: signInFormInAnimation .25s ease-out;
 
-.signinBtnGroup {
-  display: flex;
-  align-items: center;
-  margin-top: 15px;
+  .signInBtnGroup {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
 
-  .forgotPassword {
-    cursor: pointer;
-    margin-left: 20px;
-    color: rgb(66, 133, 244);
+    .forgotPassword {
+      cursor: pointer;
+      margin-left: 20px;
+      color: rgb(66, 133, 244);
+    }
   }
 }
