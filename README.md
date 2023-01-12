@@ -5,6 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Deploy
 
 [Deploy site](https://calendar-freedragon0825.netlify.app/)
+You can go to login page in [here](https://calendar-freedragon0825.netlify.app/login)
 
 ## Available Scripts
 
